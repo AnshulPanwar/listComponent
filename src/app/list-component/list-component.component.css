@@ -1,0 +1,40 @@
+li{
+list-style-type: none;
+color: #616161;
+margin-top: 16px;
+}
+
+.iconContainer{
+    margin-left: 8px;
+    float: right;
+}
+
+.iconWarning{
+    fill: #FFE559; 
+     height: 20px;
+}
+
+.iconDanger{
+    fill: #F44336;
+    height: 20px;
+}
+
+.iconSuccess{
+    fill: #4A9300;
+    height: 20px;
+}
+
+.valueContainer{
+    margin-left: 16px;
+    float: right;
+    color: #616161;
+}
+
+.iconLeft{
+    float:left;
+    margin-right: 8px;
+}
+
+.container{
+    width: 500px;
+}
