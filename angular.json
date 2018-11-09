@@ -133,6 +133,46 @@
           }
         }
       }
+    },
+    "sells-legos-angular-lib": {
+      "root": "projects/sells-legos-angular-lib",
+      "sourceRoot": "projects/sells-legos-angular-lib/src",
+      "projectType": "library",
+      "prefix": "enl",
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/sells-legos-angular-lib/tsconfig.lib.json",
+            "project": "projects/sells-legos-angular-lib/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/sells-legos-angular-lib/src/test.ts",
+            "tsConfig": "projects/sells-legos-angular-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/sells-legos-angular-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/sells-legos-angular-lib/tsconfig.lib.json",
+              "projects/sells-legos-angular-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "sells-legos-angular"

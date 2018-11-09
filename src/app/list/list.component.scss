@@ -1,0 +1,66 @@
+
+@import "../../../node_modules/@material/layout-grid/mdc-layout-grid.scss";
+@import "../../../node_modules/@kmx/legos/packages/legos-foundation/index.scss";
+
+
+
+
+
+li{
+    list-style-type: none;
+    color: #616161;
+    margin-top: 16px;
+    }
+    
+    .iconContainer{
+        margin-left: 8px;
+        float: right;
+    }
+    
+    .iconWarning{
+        fill: #FFE559; 
+         height: 20px;
+    }
+    
+    .iconDanger{
+        fill: #F44336;
+        height: 20px;
+    }
+    
+
+
+    .iconLeft{
+        float: left;
+    }
+    
+    .iconSuccess{
+        fill: #4A9300;
+        height: 20px;
+    }
+    
+    .valueContainer{
+        margin-left: 16px;
+        float: right;
+        color: #616161;
+         @include type-body-1($color: $grey-700);
+         @include mdc-layout-grid-media-query_(phone){
+             display: block;
+             float: none;
+         } 
+
+
+    }
+    
+    .iconLeft{
+        float:left;
+        margin-right: 8px;
+    }
+    
+
+    .listContainer{
+            @include type-body-1($color: $grey-700); 
+        max-width: 500px;
+    }
+
+   
+

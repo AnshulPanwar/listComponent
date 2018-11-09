@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "sells-legos-angular-lib": [
+        "dist/sells-legos-angular-lib"
+      ],
+      "sells-legos-angular-lib/*": [
+        "dist/sells-legos-angular-lib/*"
+      ]
+    }
   }
 }

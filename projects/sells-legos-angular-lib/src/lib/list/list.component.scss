@@ -1,0 +1,71 @@
+
+@import "~@material/layout-grid/mdc-layout-grid";
+
+
+
+
+
+li{
+    list-style-type: none;
+    color: #616161;
+    margin-top: 16px;
+    list-style-type: none;
+    color: #616161;
+    margin-top: 16px;
+    font-family: "Roboto", "Verdana", "Arial", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.26;
+    }
+    
+    .iconContainer{
+        margin-left: 8px;
+        float: right;
+    }
+    
+    .iconWarning{
+        fill: #FFE559; 
+         height: 20px;
+    }
+    
+    .iconDanger{
+        fill: #F44336;
+        height: 20px;
+    }
+    
+
+
+    .iconLeft{
+        float: left;
+    }
+    
+    .iconSuccess{
+        fill: #4A9300;
+        height: 20px;
+    }
+    
+    .valueContainer{
+        margin-left: 16px;
+        float: right;
+        color: #616161;
+         @include mdc-layout-grid-media-query_(phone){
+             display: block;
+             float: none;
+         } 
+
+
+    }
+    
+    .iconLeft{
+        float:left;
+        margin-right: 8px;
+    }
+    
+
+    .listContainer{
+        max-width: 500px;
+    }
+
+   
+
